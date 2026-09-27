@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ps" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>روح الله توحیدي آنلاین سوپر سټور</title>
+<style>
+:root{--navy:#062844;--blue:#0b5d8f;--green:#109447;--gold:#f3b51b;--bg:#f5f8fb;--text:#152536}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,"Noto Sans Arabic",sans-serif;background:var(--bg);color:var(--text)}
+button,input{font:inherit}.top{background:var(--navy);color:#fff;padding:9px 5%;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;font-size:14px}
+.header{background:#fff;padding:16px 5%;display:flex;align-items:center;justify-content:space-between;gap:18px;position:sticky;top:0;z-index:20;box-shadow:0 2px 10px #0001}
+.brand{display:flex;align-items:center;gap:10px}.logo{width:54px;height:54px;border-radius:15px;background:var(--gold);display:grid;place-items:center;font-size:30px}
+.brand h1{font-size:20px;margin:0;color:var(--navy)}.brand small{color:#567;display:block;margin-top:3px}
+.search{display:flex;max-width:470px;flex:1}.search input{width:100%;padding:12px 15px;border:1px solid #ccd6df;border-radius:10px 0 0 10px;direction:rtl}.search button{border:0;background:var(--navy);color:white;padding:0 18px;border-radius:0 10px 10px 0}
+.actions{display:flex;gap:8px;align-items:center}.btn{border:0;border-radius:10px;padding:10px 14px;cursor:pointer}.lang{background:#eef5f9;color:var(--navy)}.cart{background:var(--green);color:#fff}.nav{background:var(--navy);color:white;display:flex;justify-content:center;gap:28px;padding:12px}.nav a{color:white;text-decoration:none;cursor:pointer}
+.hero{margin:20px 5%;border-radius:22px;overflow:hidden;background:linear-gradient(110deg,#062844,#0c5b78 55%,#137a4d);color:#fff;padding:48px 6%;display:flex;align-items:center;justify-content:space-between;min-height:300px}.hero h2{font-size:38px;margin:0 0 12px}.hero p{font-size:20px;max-width:560px;line-height:1.7}.hero .tag{display:inline-block;background:var(--gold);color:#17202b;padding:10px 16px;border-radius:10px;font-weight:bold}.hero-art{font-size:120px;filter:drop-shadow(0 12px 10px #0004)}
+.section{padding:10px 5% 28px}.section-title{display:flex;justify-content:space-between;align-items:center}.section-title h2{margin:12px 0}.cats{display:grid;grid-template-columns:repeat(8,1fr);gap:12px}.cat{background:white;border:1px solid #e3e9ee;border-radius:16px;padding:15px 8px;text-align:center;cursor:pointer;transition:.2s}.cat:hover{transform:translateY(-3px);box-shadow:0 8px 20px #0001}.cat .ico{font-size:35px}.cat b{display:block;margin-top:7px}.cat span{font-size:12px;color:#71808c}
+.grid{display:grid;grid-template-columns:repeat(5,1fr);gap:15px}.product{background:#fff;border:1px solid #e1e7ec;border-radius:16px;overflow:hidden;padding:12px;display:flex;flex-direction:column}.pic{height:150px;border-radius:12px;background:#eef5f8;display:grid;place-items:center;font-size:80px}.product h3{font-size:16px;margin:12px 0 4px}.product small{color:#6c7883}.price{font-weight:bold;color:var(--green);font-size:18px;margin:10px 0}.add{margin-top:auto;background:var(--green);color:#fff;border:0;border-radius:10px;padding:10px;cursor:pointer}.features{background:#eaf4fa;display:grid;grid-template-columns:repeat(4,1fr);padding:22px 5%;gap:15px;text-align:center}.feature{display:flex;gap:10px;justify-content:center;align-items:center}.feature .ico{font-size:28px}
+footer{background:var(--navy);color:white;padding:35px 5%;display:grid;grid-template-columns:2fr 1fr 1fr;gap:30px}footer a{color:#dbeaf3;display:block;margin:7px 0}.copy{background:#041d31;color:#c8d5df;text-align:center;padding:12px}
+.modal{position:fixed;inset:0;background:#0008;display:none;align-items:center;justify-content:center;z-index:50}.modal.show{display:flex}.box{background:#fff;width:min(600px,92%);max-height:85vh;overflow:auto;border-radius:18px;padding:22px;direction:rtl}.box h2{margin-top:0}.item{display:flex;justify-content:space-between;gap:10px;border-bottom:1px solid #eee;padding:12px 0}.qty button{border:1px solid #ccd5db;background:#fff;border-radius:7px;width:30px;height:30px;cursor:pointer}.close{float:left;background:#eee;border:0;border-radius:8px;padding:7px 10px;cursor:pointer}.wa{background:#18a957;color:white;width:100%;border:0;padding:13px;border-radius:10px;cursor:pointer;font-weight:bold;margin-top:12px}
+@media(max-width:900px){.header{flex-wrap:wrap}.search{order:3;flex-basis:100%;max-width:none}.cats{grid-template-columns:repeat(4,1fr)}.grid{grid-template-columns:repeat(2,1fr)}.features{grid-template-columns:repeat(2,1fr)}footer{grid-template-columns:1fr 1fr}.hero-art{font-size:80px}}
+@media(max-width:520px){.top{font-size:12px}.brand h1{font-size:16px}.hero{padding:30px 6%;min-height:250px}.hero h2{font-size:27px}.hero p{font-size:16px}.hero-art{font-size:55px}.cats{grid-template-columns:repeat(2,1fr)}.grid{grid-template-columns:1fr 1fr;gap:9px}.pic{height:115px;font-size:55px}.product{padding:8px}.product h3{font-size:14px}.features{grid-template-columns:1fr}.nav{gap:12px;font-size:13px}footer{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="top"><span>📍 افغانستان</span><span id="topMsg">کیفیت، اعتماد او مناسب قیمت</span><span><button class="btn lang" onclick="setLang('ps')">🇦🇫 پښتو</button> <button class="btn lang" onclick="setLang('en')">🇬🇧 English</button></span></div>
+<header class="header">
+  <div class="brand"><div class="logo">🛒</div><div><h1 id="brandPs">روح الله توحیدي آنلاین سوپر سټور</h1><small id="brandEn">Rohullah Towhidi Online Super Store</small></div></div>
+  <div class="search"><input id="search" placeholder="محصولات ولټوئ..." oninput="renderProducts()"><button>🔍</button></div>
+  <div class="actions"><button class="btn cart" onclick="openCart()">🛒 <span id="cartText">د خرید بکس</span> (<b id="count">0</b>)</button><a class="btn" style="background:#eaf8ef;color:#087b3b;text-decoration:none" href="tel:0785304801">📞 0785304801</a></div>
+</header>
+<nav class="nav"><a onclick="scrollToId('home')">🏠 <span data-ps="کور" data-en="Home">کور</span></a><a onclick="scrollToId('products')">🛍️ <span data-ps="محصولات" data-en="Products">محصولات</span></a><a onclick="scrollToId('about')">ℹ️ <span data-ps="زموږ په اړه" data-en="About Us">زموږ په اړه</span></a><a onclick="scrollToId('contact')">📞 <span data-ps="اړیکه" data-en="Contact">اړیکه</span></a></nav>
+
+<main id="home">
+<section class="hero">
+  <div><span class="tag">⭐ <span data-ps="ستاسو د ورځني اړتیاوو غوره انتخاب" data-en="Best choice for your daily needs">ستاسو د ورځني اړتیاوو غوره انتخاب</span></span>
+  <h2>روح الله توحیدي<br>آنلاین سوپر سټور</h2>
+  <p data-ps="تازه خوراکي توکي، انرژي مشروبات، بسکټ، ویفر، چپس، چاکلیټ او نور محصولات — په مناسب قیمت." data-en="Food, energy drinks, biscuits, wafers, chips, chocolate and more — at affordable prices.">تازه خوراکي توکي، انرژي مشروبات، بسکټ، ویفر، چپس، چاکلیټ او نور محصولات — په مناسب قیمت.</p></div>
+  <div class="hero-art">🍪 🥤 🍫 🛒</div>
+</section>
+
+<section class="section"><div class="section-title"><h2 data-ps="د محصولاتو کټګورۍ" data-en="Product Categories">د محصولاتو کټګورۍ</h2></div>
+<div class="cats">
+<div class="cat" onclick="filterCat('food')"><div class="ico">🥬</div><b>خوراکه</b><span>Food</span></div>
+<div class="cat" onclick="filterCat('energy')"><div class="ico">🥤</div><b>انرژي مشروبات</b><span>Energy Drinks</span></div>
+<div class="cat" onclick="filterCat('biscuit')"><div class="ico">🍪</div><b>بسکټ</b><span>Biscuits</span></div>
+<div class="cat" onclick="filterCat('wafer')"><div class="ico">🍫</div><b>ویفر</b><span>Wafers</span></div>
+<div class="cat" onclick="filterCat('chips')"><div class="ico">🍟</div><b>چپس</b><span>Chips</span></div>
+<div class="cat" onclick="filterCat('nuts')"><div class="ico">🥜</div><b>مغز او وچې مېوې</b><span>Nuts & Fruits</span></div>
+<div class="cat" onclick="filterCat('chocolate')"><div class="ico">🍫</div><b>چاکلیټ</b><span>Chocolate</span></div>
+<div class="cat" onclick="filterCat('other')"><div class="ico">🧃</div><b>نور محصولات</b><span>Other</span></div>
+</div></section>
+
+<section class="section" id="products"><div class="section-title"><h2>🔥 <span data-ps="مهم محصولات" data-en="Featured Products">مهم محصولات</span></h2><button class="btn" onclick="filterCat('all')">ټول محصولات</button></div><div class="grid" id="productGrid"></div></section>
+<section class="features"><div class="feature"><span class="ico">🛡️</span><b>100% اصلي محصولات<br><small>Original Products</small></b></div><div class="feature"><span class="ico">🚚</span><b>چټک او باوري تحویلي<br><small>Fast Delivery</small></b></div><div class="feature"><span class="ico">🏷️</span><b>مناسب قیمت<br><small>Affordable Prices</small></b></div><div class="feature"><span class="ico">🎧</span><b>د پیرودونکو ملاتړ<br><small>Customer Support</small></b></div></section>
+</main>
+
+<footer id="contact"><div><h2>🛒 روح الله توحیدي</h2><p>آنلاین سوپر سټور<br>Rohullah Towhidi Online Super Store</p></div><div><h3>Quick Links</h3><a onclick="scrollToId('home')">Home / کور</a><a onclick="scrollToId('products')">Products / محصولات</a><a onclick="scrollToId('about')">About Us / زموږ په اړه</a></div><div><h3>Contact Us</h3><p>📞 <a href="tel:0785304801">0785304801</a></p><p>💬 <a href="https://wa.me/93785304801" target="_blank">WhatsApp</a></p><p>📍 Afghanistan / افغانستان</p></div></footer>
+<div class="copy">© 2026 Rohullah Towhidi Online Super Store — Your Satisfaction is Our Success! ❤️</div>
+
+<div class="modal" id="modal"><div class="box"><button class="close" onclick="closeCart()">✕</button><h2>🛒 د خرید بکس / Cart</h2><div id="cartItems"></div><h3 id="total"></h3><button class="wa" onclick="sendOrder()">💬 د WhatsApp له لارې فرمایش / Order on WhatsApp</button></div></div>
+
+<script>
+const products=[
+{name:'Mixed Chips Pack',ps:'د چپس مخلوط بسته',cat:'chips',price:2.5,ico:'🍟'},
+{name:'Energy Drinks',ps:'انرژي مشروبات',cat:'energy',price:1.5,ico:'🥤'},
+{name:'Oreo Biscuits',ps:'اوریو بسکټ',cat:'biscuit',price:1.2,ico:'🍪'},
+{name:'Wafers',ps:'ویفر',cat:'wafer',price:1.0,ico:'🍫'},
+{name:'Nuts & Dried Fruits',ps:'سوهان او وچې مېوې',cat:'nuts',price:3.0,ico:'🥜'},
+{name:'Chocolate',ps:'چاکلیټ',cat:'chocolate',price:1.8,ico:'🍫'},
+{name:'Food Basket',ps:'خوراکي توکي',cat:'food',price:4.0,ico:'🥬'},
+{name:'Juice & Drinks',ps:'جوس او نور مشروبات',cat:'other',price:2.0,ico:'🧃'}
+];
+let cart=[], activeCat='all', lang='ps';
+function renderProducts(){let q=document.getElementById('search').value.toLowerCase();let list=products.filter(p=>(activeCat==='all'||p.cat===activeCat)&&(!q||(p.name+' '+p.ps).toLowerCase().includes(q)));document.getElementById('productGrid').innerHTML=list.map((p,i)=>`<article class="product"><div class="pic">${p.ico}</div><h3>${lang==='ps'?p.ps:p.name}</h3><small>${lang==='ps'?p.name:p.ps}</small><div class="price">$${p.price.toFixed(2)}</div><button class="add" onclick="addCart('${p.name}')">🛒 ${lang==='ps'?'بکس ته اضافه کړه':'Add to cart'}</button></article>`).join('')||'<p>محصول ونه موندل شو.</p>'}
+function filterCat(c){activeCat=c;renderProducts();document.getElementById('products').scrollIntoView({behavior:'smooth'})}
+function addCart(name){let x=cart.find(i=>i.name===name);x?x.qty++:cart.push({name,qty:1});updateCount()}
+function updateCount(){document.getElementById('count').textContent=cart.reduce((s,x)=>s+x.qty,0)}
+function openCart(){document.getElementById('modal').classList.add('show');renderCart()}
+function closeCart(){document.getElementById('modal').classList.remove('show')}
+function renderCart(){let box=document.getElementById('cartItems');if(!cart.length){box.innerHTML='<p>ستاسو بکس خالي دی / Your cart is empty.</p>';document.getElementById('total').textContent='';return}let total=0;box.innerHTML=cart.map(x=>{let p=products.find(p=>p.name===x.name);total+=p.price*x.qty;return `<div class="item"><b>${lang==='ps'?p.ps:p.name}</b><span class="qty"><button onclick="changeQty('${x.name}',-1)">−</button> ${x.qty} <button onclick="changeQty('${x.name}',1)">+</button> &nbsp; $${(p.price*x.qty).toFixed(2)}</span></div>`}).join('');document.getElementById('total').textContent=`ټول / Total: $${total.toFixed(2)}`}
+function changeQty(name,n){let x=cart.find(i=>i.name===name);x.qty+=n;if(x.qty<=0)cart=cart.filter(i=>i.name!==name);updateCount();renderCart()}
+function sendOrder(){if(!cart.length)return;let lines=cart.map(x=>`${x.name} x${x.qty}`).join(', ');window.open('https://wa.me/93785304801?text='+encodeURIComponent('سلام، زه غواړم فرمایش وکړم: '+lines),'_blank')}
+function setLang(l){lang=l;document.documentElement.lang=l;document.documentElement.dir=l==='ps'?'rtl':'ltr';document.querySelectorAll('[data-ps]').forEach(e=>e.textContent=e.dataset[l]);document.getElementById('search').placeholder=l==='ps'?'محصولات ولټوئ...':'Search products...';renderProducts();renderCart()}
+function scrollToId(id){document.getElementById(id)?.scrollIntoView({behavior:'smooth'})}
+renderProducts();updateCount();
+</script>
+</body></html>
